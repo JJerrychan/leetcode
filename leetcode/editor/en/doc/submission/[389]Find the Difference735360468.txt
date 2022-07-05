@@ -1,0 +1,21 @@
+class Solution {
+    public char findTheDifference(String s, String t) {
+        HashMap<Character, Integer> hashMap = new HashMap<>();
+        char[] sArr = s.toCharArray();
+        char[] tArr = t.toCharArray();
+        for (char a : sArr) {
+            hashMap.put(a, 1);
+        }
+        for (char b : tArr) {
+            if (!hashMap.containsKey(b))
+                return b;
+        }
+        return ' ';
+    }
+}
+
+//total_testcases:54
+//total_correct:2
+//input_formatted:"\"a\",\"aa\""
+//expected_output:"a"
+//code_output:" "

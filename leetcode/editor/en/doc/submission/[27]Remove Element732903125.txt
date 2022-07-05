@@ -1,0 +1,21 @@
+class Solution {
+    public int removeElement(int[] nums, int val) {
+        int k = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != val) {
+                nums[k] = nums[i];
+                k++;
+            }
+        }
+        for (int i = k; i < nums.length; i++) {
+            nums[i] = 0;
+        }
+        return k+1;
+    }
+}
+
+//total_testcases:113
+//total_correct:22
+//input_formatted:"[3,2,2,3],3"
+//expected_output:[2,2]
+//code_output:[2,2,0]
