@@ -51,7 +51,7 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        ListNode prev = null;
+        /*ListNode prev = null;
         ListNode sub;
         while (head != null) {
             sub = head.next;
@@ -59,7 +59,12 @@ class Solution {
             prev = head;
             head = sub;
         }
-        return prev;
+        return prev;*/
+        if (head == null || head.next == null) return head;
+        ListNode reverseNode = reverseList(head.next);
+        head.next.next = head;
+        head.next = null;
+        return reverseNode;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
