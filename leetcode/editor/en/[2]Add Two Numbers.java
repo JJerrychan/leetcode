@@ -41,19 +41,37 @@
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * int val;
+ * ListNode next;
+ * ListNode() {}
+ * ListNode(int val) { this.val = val; }
+ * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        
+        ListNode node = new ListNode(0);
+        ListNode prev = new ListNode(0);
+        prev = node;
+        int temp = 0;
+        while (l1 != null || l2 != null || temp != 0) {
+            if (l1 != null) {
+                temp += l1.val;
+                l1 = l1.next;
+            }
+            if (l2 != null) {
+                temp += l2.val;
+                l2 = l2.next;
+            }
+            node.next = new ListNode(temp % 10);
+            temp /= 10;
+            node = node.next;
+        }
+        return prev.next;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
