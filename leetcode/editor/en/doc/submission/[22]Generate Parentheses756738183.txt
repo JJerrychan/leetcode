@@ -1,0 +1,17 @@
+class Solution {
+    public List<String> generateParenthesis(int n) {
+        List<String> ans = new LinkedList<>();
+        backtracking(n,0,0,ans,"");
+        return ans;
+    }
+    void backtracking(int n,int left,int right,List<String> ans,String str){
+        if(left==right&&left==n) {
+            ans.add(str);
+            return;
+        }
+        if(left<n) backtracking(n,left+1,right,ans,str+"(");
+        if(right<left) backtracking(n,left,right+1,ans,str+")");
+    }
+}
+//runtime:2 ms
+//memory:44.1 MB
