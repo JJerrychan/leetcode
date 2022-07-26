@@ -1,0 +1,15 @@
+class Solution {
+    public int maxProfit(int[] prices) {
+        int max=0,min=prices[0];
+        int profit=0;
+        for(int p:prices){
+            min=Math.min(min,p);
+            if(min==p) max=min;
+            max=Math.max(max,p);
+            profit = Math.max(profit,max-min);
+        }
+        return profit;
+    }
+}
+//runtime:3 ms
+//memory:83.5 MB

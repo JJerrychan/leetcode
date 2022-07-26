@@ -168,6 +168,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[121]Best Time to Buy and Sell Stock.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[121]Best Time to Buy and Sell Stock.md" />
+              <option name="frontendQuestionId" value="leetcode.com121" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[121]Best Time to Buy and Sell Stock.java" />
+              <option name="titleSlug" value="best-time-to-buy-and-sell-stock" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[141]Linked List Cycle.java">
           <value>
             <LeetcodeEditor>
@@ -176,6 +187,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[141]Linked List Cycle.java" />
               <option name="titleSlug" value="linked-list-cycle" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[142]Linked List Cycle II.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[142]Linked List Cycle II.md" />
+              <option name="frontendQuestionId" value="leetcode.com142" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[142]Linked List Cycle II.java" />
+              <option name="titleSlug" value="linked-list-cycle-ii" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -223,6 +245,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[15]3Sum.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[15]3Sum.md" />
+              <option name="frontendQuestionId" value="leetcode.com15" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[15]3Sum.java" />
+              <option name="titleSlug" value="3sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[162]Find Peak Element.java">
           <value>
             <LeetcodeEditor>
@@ -242,6 +275,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[169]Majority Element.java" />
               <option name="titleSlug" value="majority-element" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[19]Remove Nth Node From End of List.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[19]Remove Nth Node From End of List.md" />
+              <option name="frontendQuestionId" value="leetcode.com19" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[19]Remove Nth Node From End of List.java" />
+              <option name="titleSlug" value="remove-nth-node-from-end-of-list" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -300,6 +344,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[21]Merge Two Sorted Lists.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[21]Merge Two Sorted Lists.md" />
+              <option name="frontendQuestionId" value="leetcode.com21" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[21]Merge Two Sorted Lists.java" />
+              <option name="titleSlug" value="merge-two-sorted-lists" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[22]Generate Parentheses.java">
           <value>
             <LeetcodeEditor>
@@ -308,6 +363,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[22]Generate Parentheses.java" />
               <option name="titleSlug" value="generate-parentheses" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[278]First Bad Version.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[278]First Bad Version.md" />
+              <option name="frontendQuestionId" value="leetcode.com278" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[278]First Bad Version.java" />
+              <option name="titleSlug" value="first-bad-version" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -366,6 +432,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[409]Longest Palindrome.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[409]Longest Palindrome.md" />
+              <option name="frontendQuestionId" value="leetcode.com409" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[409]Longest Palindrome.java" />
+              <option name="titleSlug" value="longest-palindrome" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[4]Median of Two Sorted Arrays.java">
           <value>
             <LeetcodeEditor>
@@ -396,6 +473,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[53]Maximum Subarray.java" />
               <option name="titleSlug" value="maximum-subarray" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[589]N-ary Tree Preorder Traversal.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[589]N-ary Tree Preorder Traversal.md" />
+              <option name="frontendQuestionId" value="leetcode.com589" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[589]N-ary Tree Preorder Traversal.java" />
+              <option name="titleSlug" value="n-ary-tree-preorder-traversal" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -454,6 +542,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[876]Middle of the Linked List.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[876]Middle of the Linked List.md" />
+              <option name="frontendQuestionId" value="leetcode.com876" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[876]Middle of the Linked List.java" />
+              <option name="titleSlug" value="middle-of-the-linked-list" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[881]Boats to Save People.java">
           <value>
             <LeetcodeEditor>
@@ -473,6 +572,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[8]String to Integer (atoi).java" />
               <option name="titleSlug" value="string-to-integer-atoi" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[92]Reverse Linked List II.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[92]Reverse Linked List II.md" />
+              <option name="frontendQuestionId" value="leetcode.com92" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[92]Reverse Linked List II.java" />
+              <option name="titleSlug" value="reverse-linked-list-ii" />
             </LeetcodeEditor>
           </value>
         </entry>
