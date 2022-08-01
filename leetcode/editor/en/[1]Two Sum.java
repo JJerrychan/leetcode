@@ -44,10 +44,22 @@
 //complexity? Related Topics Array Hash Table 👍 34243 👎 1078
 
 
+import java.util.HashMap;
+
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-        
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int[] ans = new int[2];
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(target - nums[i])) {
+                ans[1] = i;
+                ans[0] = map.get(target - nums[i]);
+                return ans;
+            }
+            map.put(nums[i], i);
+        }
+        return ans;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
