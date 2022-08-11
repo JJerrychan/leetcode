@@ -718,6 +718,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[621]Task Scheduler.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[621]Task Scheduler.md" />
+              <option name="frontendQuestionId" value="leetcode.com621" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[621]Task Scheduler.java" />
+              <option name="titleSlug" value="task-scheduler" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[62]Unique Paths.java">
           <value>
             <LeetcodeEditor>
