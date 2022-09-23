@@ -1,0 +1,66 @@
+[TOC]
+
+## Video Solution
+
+---
+
+<div> 
+ <div class="video-container"> 
+  <iframe src="https://player.vimeo.com/video/474301408" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe> 
+ </div> 
+</div>
+
+<div>
+ &nbsp; 
+</div>
+
+## Solution Article
+
+---
+
+#### Approach 1: Brute Force
+
+The straight-forward solution is to compare every two meetings in the array, and see if they conflict with each other (i.e. if they overlap). Two meetings overlap if one of them starts while the other is still taking place.
+
+<iframe src="https://leetcode.com/playground/WJKqJRzi/shared" frameBorder="0" width="100%" height="361" name="WJKqJRzi"></iframe>
+
+**Overlap Condition**
+
+The overlap condition in the code above can be written in a more concise way. Consider two non-overlapping meetings. The earlier meeting ends before the later meeting begins. Therefore, the *minimum* end time of the two meetings (which is the end time of the earlier meeting) is smaller than or equal the *maximum* start time of the two meetings (which is the start time of the later meeting).
+
+![Two non-overlapping intervals](https://leetcode.com/media/original_images/252_NonOverlappingIntervals.png "Odd Even Linked List")
+
+*Figure 1. Two non-overlapping intervals.*
+
+![Two overlapping intervals](https://leetcode.com/media/original_images/252_OverlappingIntervals.png "Odd Even Linked List")
+
+*Figure 2. Two overlapping intervals.*
+
+So the condition can be rewritten as follows.
+
+<iframe src="https://leetcode.com/playground/6K5MohLT/shared" frameBorder="0" width="100%" height="123" name="6K5MohLT"></iframe>
+
+**Complexity Analysis**
+
+Because we have two check every meeting with every other meeting, the total run time is $O(n^2)$. No additional space is used, so the space complexity is $O(1)$.
+<br/>
+<br/>
+
+---
+
+#### Approach 2: Sorting
+
+The idea here is to sort the meetings by starting time. Then, go through the meetings one by one and make sure that each meeting ends before the next one starts.
+
+<iframe src="https://leetcode.com/playground/UHEuqkxa/shared" frameBorder="0" width="100%" height="361" name="UHEuqkxa"></iframe>
+
+**Complexity Analysis**
+
+* Time complexity : $O(n \log n)$.
+  The time complexity is dominated by sorting. Once the array has been sorted, only $O(n)$ time is taken to go through the array and determine if there is any overlap.
+
+* Space complexity : $O(1)$.
+  Since no additional space is allocated.
+
+<br />
+
