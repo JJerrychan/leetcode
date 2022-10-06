@@ -267,6 +267,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[1444]Number of Ways of Cutting a Pizza.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[1444]Number of Ways of Cutting a Pizza.md" />
+              <option name="frontendQuestionId" value="leetcode.com1444" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[1444]Number of Ways of Cutting a Pizza.java" />
+              <option name="titleSlug" value="number-of-ways-of-cutting-a-pizza" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[144]Binary Tree Preorder Traversal.java">
           <value>
             <LeetcodeEditor>
