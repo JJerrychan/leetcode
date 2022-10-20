@@ -1,0 +1,209 @@
+[TOC]
+
+## Solution
+
+---
+
+#### Approach 1: Backtracking
+
+**Intuition**
+
+The problem could be modeled as yet another *__graph traversal__* problem, where each course can be represented as a _vertex_ in a graph and the dependency between the courses can be modeled as a directed edge between two vertex.
+
+> And the problem to determine if one could build a valid schedule of courses that satisfies all the dependencies (_i.e._ _**constraints**_) would be equivalent to determine if the corresponding graph is a **DAG** (_Directed Acyclic Graph_), _i.e._ there is no cycle existed in the graph.
+
+![pic](https://leetcode.com/problems/course-schedule/solution/../Figures/207/207_graph.png)
+
+A typical strategy for graph traversal problems would be [backtracking](https://leetcode.com/explore/learn/card/recursion-ii/472/backtracking/) or simply DFS (depth-first search).
+
+Here let us start with the backtracking algorithm, which arguably might be more intuitive.
+
+> As a reminder, [backtracking](https://en.wikipedia.org/wiki/Backtracking) is a general algorithm that is often applied to solve the [constraint satisfaction problems](https://en.wikipedia.org/wiki/Constraint_satisfaction_problem), which incrementally builds candidates to the solutions, and abandons a candidate (_i.e._ backtracks) as soon as it determines that the candidate would not lead to a valid solution.
+
+The general idea here is that we could enumerate each course (vertex), to check if it could form cyclic dependencies (_i.e._ a cyclic path) starting from this course.
+
+The check of cyclic dependencies for each course could be done via *__backtracking__*, where we incrementally follow the dependencies until either there is no more dependency or we come across a previously visited course along the path.
+
+**Algorithm**
+
+The overall structure of the algorithm is simple, which consists of three main steps:
+
+- Step 1). we build a graph data structure from the given list of course dependencies. Here we adopt the adjacency list data structure as shown below to represent the graph, which can be implemented via hashmap or dictionary. Each entry in the adjacency list represents a node which consists of a node index and a list of neighbors nodes that follow from the node.
+  ![pic](https://leetcode.com/problems/course-schedule/solution/../Figures/207/207_adjacency_list.png)
+
+<br /> - Step 2). we then enumerate each node (course) in the constructed graph, to check if we could form a dependency cycle starting from the node. 
+<br /> - Step 3). we perform the cyclic check via backtracking, where we **_breadcrumb_** our path (_i.e._ mark the nodes we visited) to detect if we come across a previously visited node (hence a cycle detected). We also remove the breadcrumbs for each iteration.
+
+!?!../Documents/207_LIS.json:1000,383!?!
+
+<br> </br>
+
+**Implementation**
+
+> **Note:** This approach is included because it is an intuitive starting point, and it will provide a better foundation for understanding the following approaches. However, due to its time complexity, it is not expected to pass all test cases.
+
+<iframe src="https://leetcode.com/playground/aX4MGcTF/shared" frameBorder="0" width="100%" height="500" name="aX4MGcTF"></iframe>
+
+**Complexity**
+
+- Time Complexity: $\mathcal{O}(|E| + |V| ^ 2)$ where $|E|$ is the number of dependencies, $|V|$ is the number of courses and $d$ is the maximum length of acyclic paths in the graph.
+  <br/>
+  - First of all, it would take us $|E|$ steps to build a graph in the first step.
+
+  <br /> - For a single round of backtracking, in the worst case where all the nodes chained up in a line, it would take us maximum $$|V|$$ steps to terminate the backtracking. ![pic](../Figures/207/207_chain.png) 
+  <br /> - Again, follow the above worst scenario where all nodes are chained up in a line, it would take us in total $$\sum_{i=1}^{|V|}{i} = \frac{(1+|V|)\cdot|V|}{2}$$ steps to finish the check for all nodes. 
+  <br /> - As a result, the overall time complexity of the algorithm would be $$\mathcal{O}(|E| + |V| ^ 2)$$.
+
+<br /> 
+<br />
+
+- Space Complexity: $\mathcal{O}(|E| + |V|)$, with the same denotation as in the above time complexity.
+  </br>
+  - We built a graph data structure in the algorithm, which would consume $|E| + |V|$ space.
+
+  <br /> - In addition, during the backtracking process, we employed a sort of bitmap (`path`) to keep track of all visited nodes, which consumes $$|V|$$ space. 
+  <br /> - Finally, since we implement the function in recursion, which would incur additional memory consumption on call stack. In the worst case where all nodes are chained up in a line, the recursion would pile up $$|V|$$ times. 
+  <br /> - Hence the overall space complexity of the algorithm would be $$\mathcal{O}(|E| + 3\cdot|V|) = \mathcal{O}(|E| + |V|) $$.
+
+<br /> 
+<br />
+
+---
+
+#### Approach 2: Postorder DFS (Depth-First Search)
+
+**Intuition**
+
+As one might notice that, with the above backtracking algorithm, we would visit certain nodes multiple times, which is not the most efficient way.
+
+![pic](https://leetcode.com/problems/course-schedule/solution/../Figures/207/207_chain.png)
+
+For instance, in the above graph where the nodes are chained up in a line, the backtracking algorithm would end up of being a nested two-level iteration over the nodes, which we could rewrite as the following pseudo code:
+
+* python
+
+```python
+for i in range(0, len(nodes)):
+    # start from the current node to check if a cycle might be formed.
+    for j in range(i, len(nodes)):
+        isCyclic(nodes[j], courseDict, path)
+```
+
+One might wonder that if there is a better algorithm that visits each node once and only once. And the answer is yes.
+
+_In the above example, for the first node in the chain, once we've done the check that there would be no cycle formed starting from this node, we don't have to do the same check for all the nodes in the downstream._
+
+> The rationale is that given a node, if the subgraph formed by all descendant nodes from this node has no cycle, then adding this node to the subgraph would not form a cycle either.
+
+From the perspective of graph traversal, the above rationale could be implemented with the strategy of **postorder DFS** (depth-first search), in which strategy we visit a node's descendant nodes before the node itself.
+
+**Algorithm**
+
+We could implement the postorder DFS based on the above backtracking algorithm, by simply adding another bitmap (_i.e._ `checked[node_index]`) which indicates whether we have done the cyclic check starting from a particular node.
+
+Here are the breakdowns of the algorithm, where the first 2 steps are the same as in the previous backtracking algorithm.
+
+- Step 1). We build a graph data structure from the given list of course dependencies.
+
+<br /> - Step 2). We then enumerate each node (course) in the constructed graph, to check if we could form a dependency cycle starting from the node. 
+<br /> - Step 3.1). We check if the current node has been *checked* before, otherwise we enumerate through its child nodes via backtracking, where we **_breadcrumb_** our path (_i.e._ mark the nodes we visited) to detect if we come across a previously visited node (hence a cycle detected). We also remove the breadcrumbs for each iteration. 
+<br /> - Step 3.2). Once we visited all the child nodes (_i.e._ postorder), we mark the current node as `checked`.
+
+**Implementation**
+
+<iframe src="https://leetcode.com/playground/cYVanVVi/shared" frameBorder="0" width="100%" height="500" name="cYVanVVi"></iframe>
+
+Note, one could also use a single bitmap with 3 states such as  `not_visited`, `visited`, `checked`, rather than having two bitmaps as we did in the algorithm, though we argue that it might be clearer to have two separated bitmaps.
+
+**Complexity**
+
+- Time Complexity: $\mathcal{O}(|E| + |V|)$ where $|V|$ is the number of courses, and $|E|$ is the number of dependencies.
+
+<br /> - As in the previous algorithm, it would take us $$|E|$$ time complexity to build a graph in the first step. 
+<br /> - Since we perform a postorder DFS traversal in the graph, we visit each vertex and each edge once and only once in the worst case, _i.e._ $$|E| + |V|$$. 
+<br /> 
+<br />
+
+- Space Complexity: $\mathcal{O}(|E| + |V|)$, with the same denotation as in the above time complexity.
+  </br>
+  - We built a graph data structure in the algorithm, which would consume $|E| + |V|$ space.
+
+  <br /> - In addition, during the backtracking process, we employed two bitmaps (`path` and `visited`) to keep track of the visited path and the status of check respectively, which consumes $$2 \cdot |V|$$ space. 
+  <br /> - Finally, since we implement the function in recursion, which would incur additional memory consumption on call stack. In the worst case where all nodes chained up in a line, the recursion would pile up $$|V|$$ times. 
+  <br /> - Hence the overall space complexity of the algorithm would be $$\mathcal{O}(|E| + 4\cdot|V|) = \mathcal{O}(|E| + |V|)$$.
+
+<br /> 
+<br />
+
+---
+
+#### Approach 3: Topological Sort
+
+**Intuition**
+
+Actually, the problem is also known as [topological sort](https://en.wikipedia.org/wiki/Topological_sorting) problem, which is to find a global order for all nodes in a DAG (_Directed Acyclic Graph_) with regarding to their dependencies.
+
+A linear algorithm was first proposed by [Arthur Kahn](https://en.wikipedia.org/wiki/Topological_sorting) in 1962, in his paper of ["Topological order of large networks"](https://dl.acm.org/doi/10.1145/368996.369025). The algorithm returns a topological order if there is any. Here we quote the pseudo code of the Kahn's algorithm from wikipedia as follows:
+
+* python
+
+```python
+L = Empty list that will contain the sorted elements
+S = Set of all nodes with no incoming edge
+
+while S is non-empty do
+    remove a node n from S
+    add n to tail of L
+    for each node m with an edge e from n to m do
+        remove edge e from the graph
+        if m has no other incoming edges then
+            insert m into S
+
+if graph has edges then
+    return error   (graph has at least one cycle)
+else 
+    return L   (a topologically sorted order)
+```
+
+To better understand the above algorithm, we summarize a few points here:
+
+- In order to find a global order, we can start from those nodes which do not have any prerequisites (_i.e._ indegree of node is zero), we then incrementally add new nodes to the global order, following the dependencies (edges).
+
+<br /> - Once we follow an edge, we then remove it from the graph. 
+<br /> - With the removal of edges, there would more nodes appearing without any prerequisite dependency, in addition to the initial list in the first step. 
+<br /> - The algorithm would terminate when we can no longer remove edges from the graph. There are two possible outcomes: 
+<br /> - 1). If there are still some edges left in the graph, then these edges must have formed certain cycles, which is similar to the deadlock situation. It is due to these cyclic dependencies that we cannot remove them during the above processes. 
+<br /> - 2). Otherwise, _i.e._ we have removed all the edges from the graph, and we got ourselves a topological order of the graph. 
+<br />
+
+**Algorithm**
+
+Following the above intuition and pseudo code, here we list some sample implementations.
+
+!?!../Documents/207_RES.json:1000,353!?!
+
+<br> </br>
+
+**Implementation**
+
+<iframe src="https://leetcode.com/playground/9j6H52Hu/shared" frameBorder="0" width="100%" height="500" name="9j6H52Hu"></iframe>
+
+Note that we could use different types of containers, such as Queue, Stack or Set, to keep track of the nodes that have no incoming dependency, _i.e._ `indegree = 0`. Depending on the type of container, the resulting topological order would be different, though they are all valid.
+
+**Complexity**
+
+- Time Complexity: $\mathcal{O}(|E| + |V|)$ where $|V|$ is the number of courses, and $|E|$ is the number of dependencies.
+
+<br /> - As in the previous algorithm, it would take us $$|E|$$ time complexity to build a graph in the first step. 
+<br /> - Similar with the above postorder DFS traversal, we would visit each vertex and each edge once and only once in the worst case, _i.e._ $$|E| + |V|$$. 
+<br /> - As a result, the overall time complexity of the algorithm would be $$\mathcal{O}(2\cdot|E| + |V|) = \mathcal{O}(|E| + |V|)$$. 
+<br /> 
+<br />
+
+- Space Complexity: $\mathcal{O}(|E| + |V|)$, with the same denotation as in the above time complexity.
+  </br>
+  - We built a graph data structure in the algorithm, which would consume $|E| + |V|$ space.
+
+  <br /> - In addition, we use a container to keep track of the courses that have no prerequisite, and the size of the container would be bounded by $$|V|$$. 
+  <br /> - As a result, the overall space complexity of the algorithm would be $$\mathcal{O}(|E| + 2\cdot|V|) = \mathcal{O}(|E| + |V|)$$.
+
