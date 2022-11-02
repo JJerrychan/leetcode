@@ -256,6 +256,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[1360]Number of Days Between Two Dates.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[1360]Number of Days Between Two Dates.md" />
+              <option name="frontendQuestionId" value="leetcode.com1360" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[1360]Number of Days Between Two Dates.java" />
+              <option name="titleSlug" value="number-of-days-between-two-dates" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[138]Copy List with Random Pointer.java">
           <value>
             <LeetcodeEditor>
