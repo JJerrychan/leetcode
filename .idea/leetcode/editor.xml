@@ -421,6 +421,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[1696]Jump Game VI.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[1696]Jump Game VI.md" />
+              <option name="frontendQuestionId" value="leetcode.com1696" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[1696]Jump Game VI.java" />
+              <option name="titleSlug" value="jump-game-vi" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[169]Majority Element.java">
           <value>
             <LeetcodeEditor>
