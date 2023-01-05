@@ -1345,6 +1345,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[981]Time Based Key-Value Store.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[981]Time Based Key-Value Store.md" />
+              <option name="frontendQuestionId" value="leetcode.com981" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[981]Time Based Key-Value Store.java" />
+              <option name="titleSlug" value="time-based-key-value-store" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[98]Validate Binary Search Tree.java">
           <value>
             <LeetcodeEditor>
