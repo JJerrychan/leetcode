@@ -96,7 +96,23 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int myAtoi(String s) {
-        
+        int result = 0;
+        s = s.trim();
+        char[] charArr = s.toCharArray();
+        if (charArr.length < 1) return result;
+        boolean flag = charArr[0] == '-' ? false : true;
+        int i = charArr[0] == '-' || charArr[0] == '+' ? 1 : 0;
+        while (i < charArr.length) {
+            char curr = charArr[i];
+            i++;
+            if (!Character.isDigit(curr)) break;
+            int digit = Character.getNumericValue(curr);
+            if ((result > Integer.MAX_VALUE / 10) || (result == Integer.MAX_VALUE / 10 && digit > 7)) {
+                return flag ? Integer.MAX_VALUE : Integer.MIN_VALUE;
+            }
+            result = 10 * result + digit;
+        }
+        return flag ? result : -1 * result;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
