@@ -1147,6 +1147,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[523]Continuous Subarray Sum.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[523]Continuous Subarray Sum.md" />
+              <option name="frontendQuestionId" value="leetcode.com523" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[523]Continuous Subarray Sum.java" />
+              <option name="titleSlug" value="continuous-subarray-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[53]Maximum Subarray.java">
           <value>
             <LeetcodeEditor>
@@ -1485,6 +1496,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[973]K Closest Points to Origin.java" />
               <option name="titleSlug" value="k-closest-points-to-origin" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[974]Subarray Sums Divisible by K.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[974]Subarray Sums Divisible by K.md" />
+              <option name="frontendQuestionId" value="leetcode.com974" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[974]Subarray Sums Divisible by K.java" />
+              <option name="titleSlug" value="subarray-sums-divisible-by-k" />
             </LeetcodeEditor>
           </value>
         </entry>
