@@ -60,6 +60,13 @@ class Solution {
             }
         }
         return result.next;
+
+        //alternate
+//        if (head == null) return head;
+//        head.next = removeElements(head.next, val);
+//        return head.val == val ? head.next : head;
+
     }
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
