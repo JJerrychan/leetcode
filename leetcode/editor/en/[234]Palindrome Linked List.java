@@ -33,6 +33,8 @@
 
 //leetcode submit region begin(Prohibit modification and deletion)
 
+import java.util.Stack;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -62,6 +64,20 @@ class Solution {
             head = head.next;
         }
         return true;
+
+        //alternate
+//        Stack<ListNode> stack = new Stack<ListNode>();
+//        ListNode node = head;
+//        while (node != null) {
+//            stack.push(node);
+//            node=node.next;
+//        }
+//        while (!stack.empty()) {
+//            node = stack.pop();
+//            if (head.val != node.val) return false;
+//            head = head.next;
+//        }
+//        return true;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
