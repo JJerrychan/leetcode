@@ -520,6 +520,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[1801]Number of Orders in the Backlog.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[1801]Number of Orders in the Backlog.md" />
+              <option name="frontendQuestionId" value="leetcode.com1801" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[1801]Number of Orders in the Backlog.java" />
+              <option name="titleSlug" value="number-of-orders-in-the-backlog" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[198]House Robber.java">
           <value>
             <LeetcodeEditor>
