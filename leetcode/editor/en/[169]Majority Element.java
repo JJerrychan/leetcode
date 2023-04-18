@@ -25,22 +25,25 @@
 //Related Topics Array Hash Table Divide and Conquer Sorting Counting 👍 10529 👎 357
 
 
-import java.util.HashMap;
-import java.util.Hashtable;
+import java.util.Arrays;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int majorityElement(int[] nums) {
-
-        HashMap<Integer, Integer> hashMap = new HashMap<>();
-        for (int n : nums) {
-            hashMap.put(n, hashMap.getOrDefault(n, 0) + 1);
-        }
-
-        for (int n : nums) {
-            if (hashMap.get(n) > (nums.length / 2)) return n;
-        }
-        return 0;
+        Arrays.sort(nums);
+        return nums[nums.length / 2];
     }
+//    public int majorityElement(int[] nums) {
+//
+//        HashMap<Integer, Integer> hashMap = new HashMap<>();
+//        for (int n : nums) {
+//            hashMap.put(n, hashMap.getOrDefault(n, 0) + 1);
+//        }
+//
+//        for (int n : nums) {
+//            if (hashMap.get(n) > (nums.length / 2)) return n;
+//        }
+//        return 0;
+//    }
 }
 //leetcode submit region end(Prohibit modification and deletion)
