@@ -47,51 +47,67 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 //leetcode submit region begin(Prohibit modification and deletion)
+//DFS
+/*class Solution {
+    void dfs(char[][] grid, int x, int y) {
+        int rows = grid.length, cols = grid[0].length;
+        if (x >= 0 && y >= 0 && x < rows && y < cols && grid[x][y] == '1') {
+            grid[x][y] = '0';
+            dfs(grid, x - 1, y);
+            dfs(grid, x + 1, y);
+            dfs(grid, x, y - 1);
+            dfs(grid, x, y + 1);
+        }
+    }
+
+    public int numIslands(char[][] grid) {
+        int rows = grid.length, cols = grid[0].length, nums = 0;
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (grid[i][j] == '1') {
+                    dfs(grid, i, j);
+                    nums++;
+                }
+            }
+        }
+        return nums;
+    }
+}*/
+//BFS
 class Solution {
     public int numIslands(char[][] grid) {
-        int islands = 0;
-        Queue<Node> queue = new LinkedList<Node>();
-        int row = grid.length;
-        int col = grid[0].length;
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
+        int rows = grid.length, cols = grid[0].length, nums = 0;
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
                 if (grid[i][j] == '1') {
-                    islands++;
-                    queue.offer(new Node(i, j));
-                }
-                while (!queue.isEmpty()) {
-                    Node curr = queue.poll();
-                    grid[curr.x][curr.y] = '0';
-                    if (curr.x - 1 >= 0 && grid[curr.x - 1][curr.y] == '1') {
-                        queue.offer(new Node(curr.x - 1, curr.y));
-                        grid[curr.x - 1][curr.y] = '0';
-                    }
-                    if (curr.y - 1 >= 0 && grid[curr.x][curr.y - 1] == '1') {
-                        queue.offer(new Node(curr.x, curr.y - 1));
-                        grid[curr.x][curr.y - 1] = '0';
-                    }
-                    if (curr.x + 1 < row && grid[curr.x + 1][curr.y] == '1') {
-                        queue.offer(new Node(curr.x + 1, curr.y));
-                        grid[curr.x + 1][curr.y] = '0';
-                    }
-                    if (curr.y + 1 < col && grid[curr.x][curr.y + 1] == '1') {
-                        queue.offer(new Node(curr.x, curr.y + 1));
-                        grid[curr.x][curr.y + 1] = '0';
+                    nums++;
+                    grid[i][j] = '0';
+                    Queue<Integer> neiborhoods = new LinkedList<>();
+                    neiborhoods.offer(i * cols + j);
+                    while (!neiborhoods.isEmpty()) {
+                        int id = neiborhoods.poll();
+                        int x = id / cols, y = id % cols;
+                        if (x - 1 >= 0 && grid[x - 1][y] == '1') {
+                            grid[x - 1][y] = '0';
+                            neiborhoods.offer((x - 1) * cols + y);
+                        }
+                        if (x + 1 < rows && grid[x + 1][y] == '1') {
+                            grid[x + 1][y] = '0';
+                            neiborhoods.offer((x + 1) * cols + y);
+                        }
+                        if (y - 1 >= 0 && grid[x][y - 1] == '1') {
+                            grid[x][y - 1] = '0';
+                            neiborhoods.offer(x * cols + y - 1);
+                        }
+                        if (y + 1 < cols && grid[x][y + 1] == '1') {
+                            grid[x][y + 1] = '0';
+                            neiborhoods.offer(x * cols + y + 1);
+                        }
                     }
                 }
             }
         }
-        return islands;
-    }
-
-    class Node {
-        int x;
-        int y;
-
-        public Node(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
+        return nums;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
