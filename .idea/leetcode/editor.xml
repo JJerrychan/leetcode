@@ -1312,6 +1312,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[529]Minesweeper.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[529]Minesweeper.md" />
+              <option name="frontendQuestionId" value="leetcode.com529" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[529]Minesweeper.java" />
+              <option name="titleSlug" value="minesweeper" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[53]Maximum Subarray.java">
           <value>
             <LeetcodeEditor>
