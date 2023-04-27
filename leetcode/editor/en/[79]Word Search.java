@@ -66,21 +66,21 @@ public class Solution {
         return false;
     }
 
-    private boolean search(char[][] board, String word, int i, int j, int index) {
+    private boolean search(char[][] board, String word, int x, int y, int index) {
         if (index == word.length()) {
             return true;
         }
 
-        if (i >= board.length || i < 0 || j >= board[i].length || j < 0 || board[i][j] != word.charAt(index) || visited[i][j]) {
+        if (x >= board.length || x < 0 || y >= board[x].length || y < 0 || board[x][y] != word.charAt(index) || visited[x][y]) {
             return false;
         }
 
-        visited[i][j] = true;
-        if (search(board, word, i - 1, j, index + 1) || search(board, word, i + 1, j, index + 1) || search(board, word, i, j - 1, index + 1) || search(board, word, i, j + 1, index + 1)) {
+        visited[x][y] = true;
+        if (search(board, word, x - 1, y, index + 1) || search(board, word, x + 1, y, index + 1) || search(board, word, x, y - 1, index + 1) || search(board, word, x, y + 1, index + 1)) {
             return true;
         }
 
-        visited[i][j] = false;
+        visited[x][y] = false;
         return false;
     }
 }
