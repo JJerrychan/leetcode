@@ -40,7 +40,6 @@
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Stack;
 
 /**
  * Definition for a binary tree node.
@@ -58,8 +57,18 @@ import java.util.Stack;
  * }
  */
 class Solution {
+    void dfs(TreeNode root, List<Integer> list) {
+        if (root == null) return;
+        list.add(root.val);
+        dfs(root.left, list);
+        dfs(root.right, list);
+    }
+
     public List<Integer> preorderTraversal(TreeNode root) {
-        List<Integer> list = new LinkedList<Integer>();
+        List<Integer> list = new LinkedList<>();
+        dfs(root, list);
+        return list;
+        /*List<Integer> list = new LinkedList<Integer>();
         if (root == null) return list;
         Stack<TreeNode> stack = new Stack<TreeNode>();
         stack.add(root);
@@ -69,7 +78,7 @@ class Solution {
             if (node.right != null) stack.add(node.right);
             if (node.left != null) stack.add(node.left);
         }
-        return list;
+        return list;*/
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
