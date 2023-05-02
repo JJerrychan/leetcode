@@ -1,0 +1,108 @@
+[TOC]
+
+## Solution
+
+---
+
+#### How to traverse the tree
+
+There are two general strategies to traverse a tree:
+
+- *Breadth First Search* (`BFS`)
+
+  We scan through the tree level by level, following the order of height,
+  from top to bottom. The nodes on a higher level would be visited before the ones on the lower levels.
+
+- *Depth First Search* (`DFS`)
+
+  In this strategy, we adopt the `depth` as the priority, so that one
+  would start from a root and reach down to a leaf,
+  and then back to root to reach another branch.
+
+  The DFS strategy can further be distinguished as
+  `preorder`, `inorder`, and `postorder` depending on the relative order
+  among the root node, left node, and right node.
+
+![img](https://leetcode.com/problems/binary-tree-postorder-traversal/solution/../Figures/145/traverse2.png)
+*Figure 1. The nodes are numerated in the order you visit them,
+please follow ```1-2-3-4-5``` to compare different strategies.*
+
+Here the problem is to implement postorder traversal using iterations.
+<br />
+<br />
+
+---
+
+#### Approach 1: Recursive Postorder Traversal
+
+![recursion](https://leetcode.com/problems/binary-tree-postorder-traversal/solution/../Figures/145/recursion.png)
+*Figure 2. Recursive DFS traversals.*
+
+The most straightforward way is to implement recursion using
+Left -> Right -> Node traversal strategy.
+
+<iframe src="https://leetcode.com/playground/2UxsoRJQ/shared" frameBorder="0" width="100%" height="293" name="2UxsoRJQ"></iframe>
+
+**Complexity Analysis**
+
+* Time complexity: $\mathcal{O}(N)$, where $N$ is the number of nodes.
+  We visit each node exactly once,
+  thus the time complexity is $\mathcal{O}(N)$.
+
+* Space complexity: $\mathcal{O}(N)$. Up to $\mathcal{O}(H)$ to keep the recursion stack,
+  where $H$ is a tree height. In the worst case of the skewed tree $H = N$.
+
+<br /> 
+<br />
+
+---
+
+#### Approach 2: Iterative Preorder Traversal: Tweak the Order of the Output
+
+Let's start from the root, and at each iteration,
+pop the current node out of the stack and
+push its child nodes. In the implemented strategy, we push nodes into stack following the order Top->Bottom and Left->Right.
+Since DFS postorder transversal is Bottom->Top and Left->Right
+the output list should be reverted after the end of the loop.
+
+<iframe src="https://leetcode.com/playground/kkZi6QLQ/shared" frameBorder="0" width="100%" height="361" name="kkZi6QLQ"></iframe>
+
+**Complexity Analysis**
+
+* Time complexity: $\mathcal{O}(N)$, where $N$ is the number of nodes.
+  We visit each node exactly once,
+  thus the time complexity is $\mathcal{O}(N)$.
+
+* Space complexity: $\mathcal{O}(N)$. Up to $\mathcal{O}(H)$ to keep the stack,
+  where $H$ is a tree height. In the worst case of the skewed tree $H = N$.
+
+<br /> 
+<br />
+
+---
+
+#### Approach 3: Iterative Postorder Traversal
+
+**Algorithm**
+
+The idea is to fulfill the stack following right->node->left strategy.
+One could pop the last node out of the stack and check if it's the leftmost leaf.
+If yes, it's time to update the output. Otherwise, one should
+swap the last two nodes in the stack
+and repeat all these steps.
+
+!?!../Documents/145_LIS.json:1000,489!?!
+
+**Implementation**
+
+<iframe src="https://leetcode.com/playground/hPHkByFT/shared" frameBorder="0" width="100%" height="500" name="hPHkByFT"></iframe>
+
+**Complexity Analysis**
+
+* Time complexity: $\mathcal{O}(N)$, where $N$ is the number of nodes.
+  We visit each node exactly once,
+  thus the time complexity is $\mathcal{O}(N)$.
+
+* Space complexity: $\mathcal{O}(N)$. Up to $\mathcal{O}(H)$ to keep the stack,
+  where $H$ is a tree height. In the worst case of the skewed tree $H = N$.
+
