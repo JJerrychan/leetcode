@@ -960,6 +960,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[2472]Maximum Number of Non-overlapping Palindrome Substrings.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[2472]Maximum Number of Non-overlapping Palindrome Substrings.md" />
+              <option name="frontendQuestionId" value="leetcode.com2472" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[2472]Maximum Number of Non-overlapping Palindrome Substrings.java" />
+              <option name="titleSlug" value="maximum-number-of-non-overlapping-palindrome-substrings" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[2487]Remove Nodes From Linked List.java">
           <value>
             <LeetcodeEditor>
@@ -1598,6 +1609,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[647]Palindromic Substrings.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[647]Palindromic Substrings.md" />
+              <option name="frontendQuestionId" value="leetcode.com647" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[647]Palindromic Substrings.java" />
+              <option name="titleSlug" value="palindromic-substrings" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[64]Minimum Path Sum.java">
           <value>
             <LeetcodeEditor>
@@ -1606,6 +1628,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[64]Minimum Path Sum.java" />
               <option name="titleSlug" value="minimum-path-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[674]Longest Continuous Increasing Subsequence.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[674]Longest Continuous Increasing Subsequence.md" />
+              <option name="frontendQuestionId" value="leetcode.com674" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[674]Longest Continuous Increasing Subsequence.java" />
+              <option name="titleSlug" value="longest-continuous-increasing-subsequence" />
             </LeetcodeEditor>
           </value>
         </entry>
