@@ -806,6 +806,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[2183]Count Array Pairs Divisible by K.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[2183]Count Array Pairs Divisible by K.md" />
+              <option name="frontendQuestionId" value="leetcode.com2183" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[2183]Count Array Pairs Divisible by K.java" />
+              <option name="titleSlug" value="count-array-pairs-divisible-by-k" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[21]Merge Two Sorted Lists.java">
           <value>
             <LeetcodeEditor>
@@ -825,6 +836,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[226]Invert Binary Tree.java" />
               <option name="titleSlug" value="invert-binary-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[2296]Design a Text Editor.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[2296]Design a Text Editor.md" />
+              <option name="frontendQuestionId" value="leetcode.com2296" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[2296]Design a Text Editor.java" />
+              <option name="titleSlug" value="design-a-text-editor" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -1606,6 +1628,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[704]Binary Search.java" />
               <option name="titleSlug" value="binary-search" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[706]Design HashMap.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[706]Design HashMap.md" />
+              <option name="frontendQuestionId" value="leetcode.com706" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[706]Design HashMap.java" />
+              <option name="titleSlug" value="design-hashmap" />
             </LeetcodeEditor>
           </value>
         </entry>
