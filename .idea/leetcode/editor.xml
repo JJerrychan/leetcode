@@ -1235,6 +1235,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[399]Evaluate Division.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[399]Evaluate Division.md" />
+              <option name="frontendQuestionId" value="leetcode.com399" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[399]Evaluate Division.java" />
+              <option name="titleSlug" value="evaluate-division" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[39]Combination Sum.java">
           <value>
             <LeetcodeEditor>
