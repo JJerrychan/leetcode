@@ -1125,6 +1125,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[339]Nested List Weight Sum.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[339]Nested List Weight Sum.md" />
+              <option name="frontendQuestionId" value="leetcode.com339" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[339]Nested List Weight Sum.java" />
+              <option name="titleSlug" value="nested-list-weight-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[33]Search in Rotated Sorted Array.java">
           <value>
             <LeetcodeEditor>

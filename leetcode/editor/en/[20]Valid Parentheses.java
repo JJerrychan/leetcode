@@ -46,6 +46,17 @@ import java.util.Stack;
 class Solution {
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
+        for (char a : s.toCharArray()) {
+            if (a == '(') stack.push(')');
+            else if (a == '{') stack.push('}');
+            else if (a == '[') stack.push(']');
+            else if (stack.isEmpty() || stack.pop() != a) return false;
+        }
+        return stack.isEmpty();
+    }
+
+    /*public boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
         boolean result = true;
         for (int i = 0; i < s.length(); i++) {
             char a = s.charAt(i);
@@ -72,6 +83,6 @@ class Solution {
         }
         if (stack.isEmpty()) return true;
         else return false;
-    }
+    }*/
 }
 //leetcode submit region end(Prohibit modification and deletion)
