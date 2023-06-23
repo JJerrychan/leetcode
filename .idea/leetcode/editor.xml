@@ -311,6 +311,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[1189]Maximum Number of Balloons.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[1189]Maximum Number of Balloons.md" />
+              <option name="frontendQuestionId" value="leetcode.com1189" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[1189]Maximum Number of Balloons.java" />
+              <option name="titleSlug" value="maximum-number-of-balloons" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[118]Pascal's Triangle.java">
           <value>
             <LeetcodeEditor>
