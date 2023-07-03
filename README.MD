@@ -2,7 +2,11 @@
 
 ## Sources
 
-locate in /leetcode/editor/en
+codes locate in [./leetcode/editor/en](./leetcode/editor/en)
+
+## My Leetcode profile
+
+https://leetcode.com/Jerrycc_/
 
 ## Thanks for leetcode-editor IDE plugin
 
