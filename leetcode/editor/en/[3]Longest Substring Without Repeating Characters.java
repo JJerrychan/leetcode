@@ -42,7 +42,26 @@ import java.util.HashMap;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
+
     public int lengthOfLongestSubstring(String s) {
+        int[] map = new int[128];
+        int left = 0, right = 0, ans = 0;
+        while (right < s.length()) {
+            char a = s.charAt(right);
+            map[a]++;
+            while (map[a] > 1) {
+                char b = s.charAt(left);
+                map[b]--;
+                left++;
+            }
+
+            ans = Math.max(ans, right - left + 1);
+            right++;
+        }
+        return ans;
+    }
+
+   /* public int lengthOfLongestSubstring(String s) {
         int max = 0, start = 0;
         HashMap<Character, Integer> hashMap = new HashMap<>();
         for (int i = 0; i < s.length(); i++) {
@@ -53,6 +72,6 @@ class Solution {
             hashMap.put(s.charAt(i), i);
         }
         return max;
-    }
+    }*/
 }
 //leetcode submit region end(Prohibit modification and deletion)
