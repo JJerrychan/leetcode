@@ -37,17 +37,17 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int maxProduct(int[] arr) {
-        int min =arr[0];
-        int max=arr[0];
+        int min = arr[0];
+        int max = arr[0];
         int res = arr[0];
 
-        for(int i =1;i<arr.length;i++){
+        for (int i = 1; i < arr.length; i++) {
             int temp = max;
-            max=Math.max(Math.max(max*arr[i],min*arr[i]),arr[i]);
-            min=Math.min(Math.min(temp*arr[i],min*arr[i]),arr[i]);
+            max = Math.max(Math.max(max * arr[i], min * arr[i]), arr[i]);
+            min = Math.min(Math.min(temp * arr[i], min * arr[i]), arr[i]);
 
-            if(max>res){
-                res=max;
+            if (max > res) {
+                res = max;
 
             }
         }
