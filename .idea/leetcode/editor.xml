@@ -410,6 +410,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[131]Palindrome Partitioning.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[131]Palindrome Partitioning.md" />
+              <option name="frontendQuestionId" value="leetcode.com131" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[131]Palindrome Partitioning.java" />
+              <option name="titleSlug" value="palindrome-partitioning" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[133]Clone Graph.java">
           <value>
             <LeetcodeEditor>
