@@ -23,18 +23,24 @@
 
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-        HashMap<Integer, Integer> hashMap = new HashMap<>();
+        HashSet<Integer> set = new HashSet<>();
+        for (int n : nums)
+            if (set.contains(n)) return true;
+            else set.add(n);
+        return false;
+        /*HashMap<Integer, Integer> hashMap = new HashMap<>();
         for (int n : nums) {
             if(hashMap.containsKey(n)){
                 return true;
             }
             hashMap.put(n,1);
         }
-        return false;
+        return false;*/
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

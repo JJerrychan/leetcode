@@ -29,10 +29,7 @@
 // Related Topics Array Hash Table String Sorting 👍 11714 👎 369
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
@@ -42,10 +39,10 @@ class Solution {
             char[] charArr = str.toCharArray();
             Arrays.sort(charArr);
             String key = String.valueOf(charArr);
-            if (!map.containsKey(key)) map.put(key, new ArrayList<>());
+            if (!map.containsKey(key)) map.put(key, new LinkedList<>());
             map.get(key).add(str);
         }
-        return new ArrayList<>(map.values());
+        return new LinkedList<>(map.values());
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
