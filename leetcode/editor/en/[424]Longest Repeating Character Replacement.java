@@ -35,12 +35,24 @@
 // Related Topics Hash Table String Sliding Window 👍 5475 👎 215
 
 
-import java.util.HashMap;
-
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int characterReplacement(String s, int k) {
-        int longest = 0, max = 0;
+        int[] map = new int[26];
+        int left = 0, right = 0;
+        int ans = 0, longest = 0;
+        while (right < s.length()) {
+            map[s.charAt(right) - 'A']++;
+            longest = Math.max(longest, map[s.charAt(right) - 'A']);
+            right++;
+            if (right - left - longest > k) {
+                map[s.charAt(left) - 'A']--;
+                left++;
+            }
+            ans = Math.max(ans, right - left);
+        }
+        return ans;
+        /*int longest = 0, max = 0;
         HashMap<Character, Integer> map = new HashMap<>();
         int start = 0, end = 0;
         while (end < s.length()) {
@@ -55,7 +67,7 @@ class Solution {
             }
             max = Math.max(max, end - start);
         }
-        return max;
+        return max;*/
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
