@@ -1807,6 +1807,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[606]Construct String from Binary Tree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[606]Construct String from Binary Tree.md" />
+              <option name="frontendQuestionId" value="leetcode.com606" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[606]Construct String from Binary Tree.java" />
+              <option name="titleSlug" value="construct-string-from-binary-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[617]Merge Two Binary Trees.java">
           <value>
             <LeetcodeEditor>
