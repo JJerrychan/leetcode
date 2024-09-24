@@ -1,0 +1,40 @@
+class Solution {
+    public int maxAreaOfIsland(int[][] grid) {
+        int rows = grid.length, cols = grid[0].length,max=0;
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (grid[i][j]==1){
+                    int area=0;
+                    grid[i][j]=0;
+                    Queue<Integer> neiborhoods = new LinkedList<>();
+                    neiborhoods.offer(i*cols+j);
+                    while(!neiborhoods.isEmpty()){
+                        area++;
+                        int id = neiborhoods.poll();
+                        int x = id / cols, y = id % cols;
+                        if (x - 1 >= 0 && grid[x - 1][y] == 1) {
+                            grid[x - 1][y] = 0;
+                            neiborhoods.offer((x - 1) * cols + y);
+                        }
+                        if (x + 1 < rows && grid[x + 1][y] == 1) {
+                            grid[x + 1][y] = 0;
+                            neiborhoods.offer((x + 1) * cols + y);
+                        }
+                        if (y - 1 >= 0 && grid[x][y - 1] == 1) {
+                            grid[x][y - 1] = 0;
+                            neiborhoods.offer(x * cols + y - 1);
+                        }
+                        if (y + 1 < cols && grid[x][y + 1] == 1) {
+                            grid[x][y + 1] = 0;
+                            neiborhoods.offer(x * cols + y + 1);
+                        }
+                    }
+                    max=Math.max(area,max);
+                }
+            }
+        }
+        return max;
+    }
+}
+//runtime:3 ms
+//memory:44.5 MB
