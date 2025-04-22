@@ -245,6 +245,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[1071]Greatest Common Divisor of Strings.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[1071]Greatest Common Divisor of Strings.md" />
+              <option name="frontendQuestionId" value="leetcode.com1071" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[1071]Greatest Common Divisor of Strings.java" />
+              <option name="titleSlug" value="greatest-common-divisor-of-strings" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[108]Convert Sorted Array to Binary Search Tree.java">
           <value>
             <LeetcodeEditor>
