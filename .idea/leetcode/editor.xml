@@ -1708,6 +1708,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[451]Sort Characters By Frequency.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[451]Sort Characters By Frequency.md" />
+              <option name="frontendQuestionId" value="leetcode.com451" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[451]Sort Characters By Frequency.java" />
+              <option name="titleSlug" value="sort-characters-by-frequency" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[45]Jump Game II.java">
           <value>
             <LeetcodeEditor>
