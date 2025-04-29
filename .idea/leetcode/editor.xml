@@ -179,6 +179,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[1021]Remove Outermost Parentheses.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[1021]Remove Outermost Parentheses.md" />
+              <option name="frontendQuestionId" value="leetcode.com1021" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[1021]Remove Outermost Parentheses.java" />
+              <option name="titleSlug" value="remove-outermost-parentheses" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[1029]Two City Scheduling.java">
           <value>
             <LeetcodeEditor>
