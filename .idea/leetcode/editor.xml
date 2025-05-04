@@ -322,6 +322,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[1143]Longest Common Subsequence.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[1143]Longest Common Subsequence.md" />
+              <option name="frontendQuestionId" value="leetcode.com1143" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[1143]Longest Common Subsequence.java" />
+              <option name="titleSlug" value="longest-common-subsequence" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[114]Flatten Binary Tree to Linked List.java">
           <value>
             <LeetcodeEditor>
@@ -396,6 +407,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[122]Best Time to Buy and Sell Stock II.java" />
               <option name="titleSlug" value="best-time-to-buy-and-sell-stock-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[123]Best Time to Buy and Sell Stock III.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[123]Best Time to Buy and Sell Stock III.md" />
+              <option name="frontendQuestionId" value="leetcode.com123" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[123]Best Time to Buy and Sell Stock III.java" />
+              <option name="titleSlug" value="best-time-to-buy-and-sell-stock-iii" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -869,6 +891,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[1801]Number of Orders in the Backlog.java" />
               <option name="titleSlug" value="number-of-orders-in-the-backlog" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[188]Best Time to Buy and Sell Stock IV.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[188]Best Time to Buy and Sell Stock IV.md" />
+              <option name="frontendQuestionId" value="leetcode.com188" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[188]Best Time to Buy and Sell Stock IV.java" />
+              <option name="titleSlug" value="best-time-to-buy-and-sell-stock-iv" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -1430,6 +1463,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[303]Range Sum Query - Immutable.java" />
               <option name="titleSlug" value="range-sum-query-immutable" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[309]Best Time to Buy and Sell Stock with Cooldown.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[309]Best Time to Buy and Sell Stock with Cooldown.md" />
+              <option name="frontendQuestionId" value="leetcode.com309" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[309]Best Time to Buy and Sell Stock with Cooldown.java" />
+              <option name="titleSlug" value="best-time-to-buy-and-sell-stock-with-cooldown" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -2222,6 +2266,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[713]Subarray Product Less Than K.java" />
               <option name="titleSlug" value="subarray-product-less-than-k" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[714]Best Time to Buy and Sell Stock with Transaction Fee.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[714]Best Time to Buy and Sell Stock with Transaction Fee.md" />
+              <option name="frontendQuestionId" value="leetcode.com714" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[714]Best Time to Buy and Sell Stock with Transaction Fee.java" />
+              <option name="titleSlug" value="best-time-to-buy-and-sell-stock-with-transaction-fee" />
             </LeetcodeEditor>
           </value>
         </entry>
