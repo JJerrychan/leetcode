@@ -861,6 +861,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[175]Combine Two Tables.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[175]Combine Two Tables.md" />
+              <option name="frontendQuestionId" value="leetcode.com175" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[175]Combine Two Tables.java" />
+              <option name="titleSlug" value="combine-two-tables" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[1762]Buildings With an Ocean View.java">
           <value>
             <LeetcodeEditor>
@@ -1367,6 +1378,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[2636]Promise Pool.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[2636]Promise Pool.md" />
+              <option name="frontendQuestionId" value="leetcode.com2636" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[2636]Promise Pool.java" />
+              <option name="titleSlug" value="promise-pool" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[2645]Minimum Additions to Make Valid String.java">
           <value>
             <LeetcodeEditor>
@@ -1620,6 +1642,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[380]Insert Delete GetRandom O(1).java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[380]Insert Delete GetRandom O(1).md" />
+              <option name="frontendQuestionId" value="leetcode.com380" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[380]Insert Delete GetRandom O(1).java" />
+              <option name="titleSlug" value="insert-delete-getrandom-o1" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[383]Ransom Note.java">
           <value>
             <LeetcodeEditor>
@@ -1804,6 +1837,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[451]Sort Characters By Frequency.java" />
               <option name="titleSlug" value="sort-characters-by-frequency" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[459]Repeated Substring Pattern.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[459]Repeated Substring Pattern.md" />
+              <option name="frontendQuestionId" value="leetcode.com459" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[459]Repeated Substring Pattern.java" />
+              <option name="titleSlug" value="repeated-substring-pattern" />
             </LeetcodeEditor>
           </value>
         </entry>
