@@ -37,13 +37,37 @@
 // Related Topics Hash Table String Sliding Window 👍 8197 👎 266
 
 
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<Integer> findAnagrams(String s, String p) {
+        List<Integer> list = new LinkedList<>();
+        if (s.length() < p.length()) return list;
+        int[] map = new int[26];
+        for (char a : p.toCharArray()) map[a - 'a']++;
+
+        int start = 0, end = 0;
+        int toBeMatched = p.length();
+
+        while (end < s.length()) {
+            char curr = s.charAt(end);
+            if (map[curr - 'a'] > 0)  toBeMatched--;
+            map[curr - 'a']--;
+            end++;
+            if (end - start > p.length()) {
+                char curs = s.charAt(start);
+                if (map[curs - 'a'] >= 0) toBeMatched++;
+                map[curs - 'a']++;
+                start++;
+            }
+            if (toBeMatched == 0) list.add(start);
+        }
+        return list;
+    }
+
+    /*public List<Integer> findAnagrams(String s, String p) {
         List<Integer> list = new LinkedList<>();
         HashMap<Character, Integer> map = new HashMap<>();
         int left = 0, right = 0;
@@ -67,6 +91,6 @@ class Solution {
             if (toBeMatched == 0) list.add(left);
         }
         return list;
-    }
+    }*/
 }
 //leetcode submit region end(Prohibit modification and deletion)
