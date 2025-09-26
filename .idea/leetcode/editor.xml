@@ -663,6 +663,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[1475]Final Prices With a Special Discount in a Shop.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[1475]Final Prices With a Special Discount in a Shop.md" />
+              <option name="frontendQuestionId" value="leetcode.com1475" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[1475]Final Prices With a Special Discount in a Shop.java" />
+              <option name="titleSlug" value="final-prices-with-a-special-discount-in-a-shop" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[1480]Running Sum of 1d Array.java">
           <value>
             <LeetcodeEditor>
