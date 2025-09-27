@@ -45,6 +45,22 @@
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int minSubArrayLen(int target, int[] nums) {
+        int min = nums.length + 1;
+        int sum = 0;
+        int left = 0, right = 0;
+        while (right < nums.length) {
+            sum += nums[right];
+            while (sum >= target) {
+                min = Math.min(min, right - left + 1);
+                sum -= nums[left];
+                left++;
+            }
+            right++;
+        }
+        return min == nums.length + 1 ? 0 : min;
+    }
+
+/*    public int minSubArrayLen(int target, int[] nums) {
         int sum = 0;
         int length = nums.length + 1;
         int i = 0, j = 0;
@@ -58,6 +74,6 @@ class Solution {
             j++;
         }
         return length == nums.length + 1 ? 0 : length;
-    }
+    }*/
 }
 //leetcode submit region end(Prohibit modification and deletion)
