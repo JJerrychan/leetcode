@@ -2137,6 +2137,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/en/[560]Subarray Sum Equals K.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/en/doc/content/[560]Subarray Sum Equals K.md" />
+              <option name="frontendQuestionId" value="leetcode.com560" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/en/[560]Subarray Sum Equals K.java" />
+              <option name="titleSlug" value="subarray-sum-equals-k" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/en/[567]Permutation in String.java">
           <value>
             <LeetcodeEditor>
