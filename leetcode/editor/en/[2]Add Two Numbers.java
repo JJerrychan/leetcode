@@ -53,6 +53,26 @@
  * }
  */
 class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode dummy = new ListNode(0);
+        ListNode node = dummy;
+        int temp = 0;
+        while (l1 != null || l2 != null || temp != 0) {
+            if (l1 != null) {
+                temp += l1.val;
+                l1 = l1.next;
+            }
+            if (l2 != null) {
+                temp += l2.val;
+                l2 = l2.next;
+            }
+            node.next = new ListNode(temp % 10);
+            temp /= 10;
+            node = node.next;
+        }
+        return dummy.next;
+    }
+
     /*iteration*/
     /*public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode node = new ListNode(0);
@@ -75,7 +95,7 @@ class Solution {
         return prev.next;
     }*/
     /*recrusion*/
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    /*public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         if (l1 == null && l2 == null) return null;
         if (l1 == null) l1 = new ListNode(0);
         if (l2 == null) l2 = new ListNode(0);
@@ -88,6 +108,6 @@ class Solution {
         }
 
         return new ListNode(sum, addTwoNumbers(l1.next, l2.next));
-    }
+    }*/
 }
 //leetcode submit region end(Prohibit modification and deletion)
